@@ -40,7 +40,7 @@
   <div class="search-bar">
     <label for="searchBySkills">Filter by Skills:</label>
     <input type="text" id="searchBySkills" placeholder="Enter skills...">
-    <button onclick="filterBySkills()">Filter</button>
+    <button onclick="filterBySkills1()">Filter</button>
   </div>
 
 
@@ -56,7 +56,7 @@
       <select id="skillDropdown" multiple onchange="filterBySkills()" class="mul">
         <option value="">All</option>
         <option value="SQL">SQL</option>
-        <option value="Python">Python</option>
+        <option value="Photoshop">Photoshop</option>
         <option value="JavaScript">JavaScript</option>
         <option value="HTML">HTML</option>
         <option value="CSS">CSS</option>
@@ -151,7 +151,7 @@ function searchByName() {
 
 
     // Filter employees by skills
-    function filterBySkills() {
+    function filterBySkills1() {
       const searchBySkillsInput = document.getElementById('searchBySkills');
       const skills = searchBySkillsInput.value.split(',').map(skill => skill.trim());
       const filteredEmployees = employees.filter(employee =>
